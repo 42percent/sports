@@ -1,8 +1,11 @@
 package com.example.api.model;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 
 @Entity
+@Getter
 public class Team {
   @Id
   @GeneratedValue(strategy= GenerationType.AUTO)
@@ -19,8 +22,4 @@ public class Team {
 
   @OneToOne(cascade = CascadeType.ALL)
   private User ownerId;
-
-  public Sports getSports() {
-    return sports;
-  }
 }

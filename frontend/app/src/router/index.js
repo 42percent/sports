@@ -8,7 +8,8 @@ const router = new Router({
     routes: [
         {path:'/', component: () => import('../components/Home.vue')},
         {path:'/Login', component: () => import('../components/Login.vue')},
-        {path:'/Register', component: () => import('../components/Register.vue')}
+        {path:'/Register', component: () => import('../components/Register.vue')},
+        {path:'/Team/list', component: () => import('../components/Team/List.vue')}
     ]
 })
 
